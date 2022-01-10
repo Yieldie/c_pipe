@@ -1,4 +1,4 @@
-# c_simple_pipe
+# c_pipe
 A very simple implementation of a single pipe (2 processes)
 
 This program (```src/pipe.c```) spawns two child processes connected with the pipe, created by the ```pipe()``` function from glibc. You need two pass two arguments in the command line - paths to executables for the first and the second child process in the pipe. The first process will be waiting for the input from ```stdin```, terminated with the ```\n``` char. The second process will write its output to ```stdout```.
